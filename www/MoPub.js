@@ -1,7 +1,4 @@
-
-var argscheck = require('cordova/argscheck'),
-    exec = require('cordova/exec');
-
+var argscheck = require('cordova/argscheck'), exec = require('cordova/exec');
 var mopubExport = {};
 
 mopubExport.AD_SIZE = {
