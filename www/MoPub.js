@@ -85,7 +85,7 @@ mopubExport.showBannerAtXY = function(x, y, successCallback, failureCallback) {
 	cordova.exec( successCallback, failureCallback, 'MoPub', 'showBannerAtXY', [{x:x, y:y}] );
 };
 
-mopubExport.prepareInterstitial = function(args, successCallback, failureCallback) {
+mopubExport.createInterstitialView = function(args, successCallback, failureCallback) {
 	var options = {};
 	if(typeof args === 'object') {
 		for(var k in args) {
@@ -101,7 +101,7 @@ mopubExport.prepareInterstitial = function(args, successCallback, failureCallbac
 	cordova.exec( successCallback, failureCallback, 'MoPub', 'prepareInterstitial', [ args ] );
 };
 
-mopubExport.showInterstitial = function(successCallback, failureCallback) {
+mopubExport.showInterstitialAd = function(successCallback, failureCallback) {
 	cordova.exec( successCallback, failureCallback, 'MoPub', 'showInterstitial', [] );
 };
 
