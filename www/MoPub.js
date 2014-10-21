@@ -106,4 +106,3 @@ mopubExport.showInterstitialAd = function(successCallback, failureCallback) {
 };
 
 module.exports = mopubExport;
-
